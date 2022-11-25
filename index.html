@@ -1,81 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="prod.png" type="image/x-icon" />
-    <title>LevelUp</title>
-  </head>
-  <body>
-    <div class="block">
-      <video autoplay muted loop id="myVideo">
-        <source src="video.mp4" type="video/mp4" />
-      </video>
-      <div class="block color1">
-        <h1 class="border">LevelUp</h1>
-        <div class="promo">
-          <div class="blockPromo border">
-            <ul class="text">
-             <span></span> <li class="text">Выше</li></span>
-              <li class="text">Крепче</li>
-              <li class="text">Дольше</li>
-            </ul>
-          </div>
-          <div class="blockPromo border">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="prod.png" type="image/x-icon" />
+  <title>LevelUp</title>
+</head>
+
+<body class="maxvh w100">
+  <div class="maxvh w100 flex">
+    <video autoplay muted loop class="maxvh w100">
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+    <div class="maxvh w100 flex flexc color1">
+      <h1 class="border text">LevelUp</h1>
+      <div class="flex">
+        <div class="block flex border">
+          <ul class="text">
+            <li class="text">Выше</li>
+            <li class="text">Крепче</li>
+            <li class="text">Дольше</li>
+          </ul>
+        </div>
+        <div class="block border">
+          <img src="prod.png" alt="*продукт" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="maxvh w100 flex color2">
+    <div class="flex flexc">
+      <div class="maxvh w100 margintb">
+        <div class="characteristic pr flex">
+          <img src="bell.png" alt="*ядовитый колокольчик" />
+          <label class="text">Колокольчик</label>
+        </div>
+      </div>
+      <div class="maxvh w100 margintb">
+        <div class="characteristic pr flex">
+          <img src="mushroom.webp" alt="*лютый гриб" />
+          <label class="text">Лютый гриб</label>
+        </div>
+      </div>
+      <div class="maxvh w100 margintb">
+        <div class="characteristic pr flex">
+          <img src="salt.webp" alt="*огненная соль" />
+          <label class="text">Огненная соль</label>
+        </div>
+      </div>
+    </div>
+    <div class="imgProduct block">
+      <img src="prod.png" alt="*продукт" />
+    </div>
+    <div class="flex flexc">
+      <div class="maxvh w100 margintb">
+        <div class="characteristic pr flex">
+          <img src="pod.webp" alt="*болотный стручок" />
+          <label class="text">Болотный стручок</label>
+        </div>
+      </div>
+      <div class="maxvh w100 margintb">
+        <div class="characteristic pr flex">
+          <img src="nightshade.webp" alt="*паслен" />
+          <label class="text">Паслен</label>
+        </div>
+      </div>
+      <div class="maxvh w100 margintb">
+        <div class="characteristic pr flex">
+          <img src="fish.webp" alt="*окунь" />
+          <label class="text">Окунь</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="maxvh w100 flex color2 revieww">
+    <div class="review w100">
+      <div class="photo">
+        <img class="border" src="1review.jpg" />
+      </div>
+      <div class="name border text">
+        <span>Arrow</span>
+      </div>
+      <div class="textReview border text">
+        <span>Id amet mauris libero, odio.
+          Eleifend dictum. Ornare ipsum sed ut. Platea ut.
+          Pellentesque habitass.</span>
+      </div>
+    </div>
+    <div class="review w100">
+      <div class="photo">
+        <img class="border" src="1review.jpg" />
+      </div>
+      <div class="name border text">
+        <span>Arrow</span>
+      </div>
+      <div class="textReview border text">
+        <span>Id amet mauris libero, odio.
+          Eleifend dictum. Ornare ipsum sed ut. Platea ut.
+          Pellentesque habitass.</span>
+      </div>
+    </div>
+    <div class="review w100">
+      <div class="photo">
+        <img class="border" src="1review.jpg" />
+      </div>
+      <div class="name border text">
+        <span>Arrow</span>
+      </div>
+      <div class="textReview border text">
+        <span>Id amet mauris libero, odio.
+          Eleifend dictum. Ornare ipsum sed ut. Platea ut.
+          Pellentesque habitass.</span>
+      </div>
+    </div>
+  </div>
+  <div class="maxvh w100 flex color2 promo2">
+    <div class="promop2">
+      <div class="block border">
+        <img src="doctor.png" />
+      </div>
+      <div class="block border">
+        <span class="text">
+          Adipiscing et luctus in libero, ex.
+          Lorem tempus id vitae dapibus et venenatis luctus dictumst.
+          Pulvinar odio. Imperdiet sed ultricies.
+          Efficitur accumsan sapien ipsum mollis aenean quam, mattis dui accumsan adipiscing nec quis, amet, dui non
+          nulla tempus interdum consectetur eget nisi dictum.
+          Sodales aenean tempus elit. Faucibus. Dictumst. Malesuad.
+        </span>
+      </div>
+    </div>
+    <div class="text border block ch">
+      <span>Выше Дальше Ловчее</span>
+    </div>
+  </div>
+  <div class="maxvh w100 flex color2" id="sections">
+    <div class="flex flexc w100">
+      <h1 class="border text">LevelUp</h1>
+      <div class="flex">
+        <div class="border block flexc">
+
+          <div class="block border">
             <img src="prod.png" alt="*продукт" />
           </div>
-          <article></article>
+          <div class="price pr border text">20$</div>
+          <div class="pr border text">19.99$</div>
         </div>
+        <div class="border block flexc">
+          <label><span>Name</span>
+            <input class="pr" placeholder="Name"></label>
+          <label><span>Phone</span>
+            <input class="pr" type="number" placeholder="8(000)000-00-00"></label>
+          <a href="#sections">Заказать!</a>
+        </div>
+
       </div>
     </div>
-    <div class="block color2">
-      <div class="blockCharacteristic">
-      <div class = "items">
-       <div class="characteristic">
-        <img src="bell.png" alt="*ядовитый колокольчик" />
-        <label class="text">Колокольчик</label> 
-       </div>
-      </div>       
-      <div class = "items">
-       <div class="characteristic">
-        <img src="mushroom.webp" alt="*лютый гриб" />
-        <label class="text">Лютый гриб</label> 
-      </div>
-      </div>
-      <div class = "items">
-       <div class="characteristic">
-        <img src="salt.webp" alt="*огненная соль" />
-        <label class="text">Огненная соль</label> 
-      </div>
-      </div>
-      </div>
-      <div class="imgProduct blockPromo">
-      <img src="prod.png" alt="*продукт" />
-      </div>
-      <div class="blockCharacteristic">
-        <div class = "items">
-        <div class="characteristic">
-          <img src="pod.webp" alt="*болотный стручок" />
-          <label class="text">Болотный стручок</label> 
-        </div>        
-        </div>        
-        <div class = "items">
-        <div class="characteristic">
-          <img src="nightshade.webp" alt="*паслен" />
-          <label class="text">Паслен</label> 
-        </div>
-        </div>
-        <div class = "items">
-        <div class="characteristic">
-          <img src="fish.webp" alt="*окунь" />
-          <label class="text">Окунь</label> 
-        </div>
-      </div>
-      </div>
-    </div>
-    <div class="block color3"></div>
-    <div class="block color4"></div>
-  </body>
+  </div>
+</body>
+
 </html>

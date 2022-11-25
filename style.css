@@ -1,104 +1,73 @@
 html,
 body {
   margin: 0;
-  max-width: 100%;
-  max-height: 100%;
 }
 h1 {
-  text-align: center;
-  display: inline;
   margin-left: 10%;
   margin-right: 10%;
+}
+.maxvh{
+  position: relative;
+  max-height: 100%;
+}
+.w100{
+  width: 100%;
 }
 .text {
   color: goldenrod;
   text-shadow: 1px 1px 1px black;
   font-size: 4vw;
+  list-style-type: none
 }
-.block {
-  position: relative;
+.flex{
   display: flex;
   justify-content: center;
   overflow: hidden;
-  width: 100%;
-  max-height: 100%;
+}
+.flexc{
+  flex-direction: column;
 }
 .color1 {
-  display: flex;
-  flex-direction: column;
   position: absolute;
   top: 0;
   height: 100%;
 }
 .color2 {
   background: radial-gradient(#7cc1de, #077de1, #4c115b);
-  display: flex;
-  height: 100%;
-  z-index: -1;
-}
-.color3 {
-  background-color: blueviolet;
-  height: 300px;
-}
-.color4 {
-  background-color: aqua;
-  height: 100px;
-}
-
-#myVideo {
-  min-width: 100%;
-  min-height: 100%;
-}
-.promo {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
   height: 100%;
 }
-.blockPromo {
-  overflow: hidden;
+.block {
   width: 45%;
   margin: 3%;
-  display: flex;
-  justify-content: center;
 }
-img {
+.margintb{
   margin-top: auto;
   margin-bottom: auto;
+}
+img {
   display: block;
   width: 95%;
   height: 95%;
   object-fit: contain;
 }
 .imgProduct {
-  /* flex-grow: 0.5; */
   width: auto;
   height: auto;
   margin: 0;
 }
+.pr{
+  position: relative;
+}
 .border {
   border: solid 2px blueviolet;
   text-align: center;
-  z-index: 1;
-  /* font-size: 100%; */
 }
-.characteristic {
-  display: flex;
-  position: relative;
-  justify-content: center;
+.characteristic {  
+  overflow: visible;
   text-align: center;
   border-radius: 50%;
   width: 30%;
   margin: 5px auto;
-}
-.items {
-  position: relative;
-  display: flex;
-  align-items: center;
-  display: block;
-  width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 label.text {
   font-size: 2vw;
@@ -121,9 +90,54 @@ label.text {
   );
   border-radius: 50%;
 }
-.blockCharacteristic {
+.photo{  
+  margin-right: auto;
+  margin-left: auto;
+  width: 20%;
+}
+.revieww{
+  justify-content: flex-start;
+overflow: auto;
+scroll-snap-type: x mandatory;
+}
+.review{  
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+.description{
+  max-width: 50%;
+}
+.promop2{
   display: flex;
-  /* flex-grow: 1; */
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.promo2{
   flex-direction: column;
 }
+.ch{
+  width: 95%;
+}
+.price{
+  overflow: hidden;
+}
+.price:before {
+  border-bottom: 3px solid red;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  transform: rotate(-7deg);
+  }
+  input{
+    width: 90%;
+    margin: 10px;
+  }
+  a{
+    width: 100px;
+    background-color: red;
+    position: fixed;
+    bottom:10%;
+    right: 10%;
+  }
